@@ -1,0 +1,6 @@
+- ~~Finish product filter~~
+- ~~Product page and add product to cart~~
+- ~~Login/Signup Validation~~
+- Complete Cart Page with Edit Function
+- Finish index page
+- Add Products to DB

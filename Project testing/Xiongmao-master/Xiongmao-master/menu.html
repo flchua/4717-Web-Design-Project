@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Xiong Mao - Menu</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/xiongmao.css">
+<link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body>
+<div id="title-left">
+	<a href="home.html"><img src="assets/logo.png" id="logo" width="204" height="103"></a>
+</div>
+<div id="title-right">
+	<header>
+		<h1>Xiong Mao</h1>
+	</header>
+	<nav>
+		<a href="home.html">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="reservation.html">Reservation</a>
+		<a href="delivery.php">Delivery</a>
+		<a href="event.php">Event</a>
+		<a href="contact.html">Contact</a>
+		<a href="registration/register.php">Account</a>
+	</nav>
+</div>
+<div id="header">
+	<img src="assets/headerMenu.png" width="1400" height="300">
+</div>
+<div id="wrapper">
+	<div id="menu_nav">
+		<ul>
+			<li><a href="#food">Food Menu</a></li>
+			<li><a href="#drink">Drink Menu</a></li>
+			<li><a href="#dessert">Dessert Menu</a></li>
+		</ul>
+	</div>
+	<div id="menu">
+		<h3 id="food">Food Menu</h3>
+		<h4>Meat<input type="button" class="btn" id="btnMeat" value="-" onclick="foldMeat();"></h4>
+		<table id="meat" class="product">
+			<tr>
+				<td><p>Sliced Beef with Black Pepper Sauce</p></td>
+			</tr>
+			<tr>
+				<td><p>Double Cooked Pork with Chinese Leek</p></td>
+			</tr>
+			<tr>
+				<td><p>Spicy Chicken</p></td>
+			</tr>
+			<tr>
+				<td><p>Fish Filets in Hot Chili Oil</p></td>
+			</tr>
+			<tr>
+				<td><p>Dry-fried Savory Hot Crab with Red Chilli Peppers</p></td>
+			</tr>						
+			<tr>
+				<td><p>Stewed Oxtail and Taro with Spicy Sauce in Casserole</p></td>
+			</tr>
+			<tr>
+				<td><p>Beef Slices and Enokitake in Sour and Spicy Soup</p></td>
+			</tr>
+			<tr>
+				<td><p>Beef Tenderloin with Tofu in Spicy Pepper Sauce</p></td>
+			</tr>
+			<tr>
+				<td><p>Stewed Pork Belly Slices with Preserved Vegetables in Soya Sauce</p></td>
+			</tr>
+		</table>
+		<h4>Vegetables<input type="button" class="btn" id="btnVege" value="-" onclick="foldVege();"></h4>
+		<table id="vege" class="product">
+			<tr>
+				<td><p>Egg Plant with Minced Chicken and Sichuan Chilli Sauce</p></td>
+			</tr>
+			<tr>
+				<td><p>Lettuce in Oyster Sauce</p></td>
+			</tr>
+			<tr>
+				<td><p>Sautéed Wild Mushroom with Pickle Chili and Mustard Green</p></td>
+			</tr>
+			<tr>
+				<td><p>Stir-fried Green Bean with Red Chili</p></td>
+			</tr>
+			<tr>
+				<td><p>Dry-fried Cauliflower with Dry Red Peppers</p></td>
+			</tr>
+			<tr>
+				<td><p>Chinese Kai Lan with Garlic Sauce</p></td>
+			</tr>
+			<tr>
+				<td><p>Mixed Vegetables with Tofu</p></td>
+			</tr>
+			<tr>
+				<td><p>Cabbage in Chicken Soup</p></td>
+			</tr>
+		</table>
+		<h3 id="drink">Drink Menu</h3>
+		<h4>Alcohol<input type="button" class="btn" id="btnAlcohol" value="-" onclick="foldAlcohol();"></h4>
+		<table id="alcohol" class="product">
+			<tr>
+				<td><p>Traditional Chinese Liquor, China</p></td>
+			</tr>
+			<tr>
+				<td><p>Château Haut Rian, Bordeaux Sec, Michel Dietrich Earl, Bordeaux, France</p></td>
+			</tr>
+			<tr>
+				<td><p>Massaya Classic Rosé, Bekaa Valley, Lebanon</p></td>
+			</tr>
+			<tr>
+				<td><p>Malbec, Gouguenheim, Blue Melosa, Valle Escondido, Mendoza, Argentina</p></td>
+			</tr>
+			<tr>
+				<td><p>CMasumi 'Nanago' Seventh Heavene</p></td>
+			</tr>
+		</table>
+		<h4>Tea<input type="button" class="btn" id="btnTea" value="-" onclick="foldTea();"></h4>
+		<table id="tea" class="product">
+			<tr>
+				<td><p>Bai Mu Dan White Peony</p></td>
+			</tr>
+			<tr>
+				<td><p>Oolong Tea</p></td>
+			</tr>
+			<tr>
+				<td><p>Pu-Er Seng Cha</p></td>
+			</tr>
+			<tr>
+				<td><p>Dragon Phoenix Pearl</p></td>
+			</tr>	
+			<tr>
+				<td><p>Wild Chrysanthemum Seeds</p></td>
+			</tr>
+			<tr>
+				<td><p>Snowy Flake</p></td>
+			</tr>
+			<tr>
+				<td><p>Dragon Well – Long Jing</p></td>
+			</tr>
+			<tr>
+				<td><p>Oriental Blooms</p></td>
+			</tr>
+			<tr>
+				<td><p>Sweet-Sour Plum Juice</p></td>
+			</tr>
+		</table>
+		<h3 id="dessert">Dessert Menu</h3>
+		<h4>Hot<input type="button" class="btn" id="btnHot" value="-" onclick="foldHot();"></h4>
+		<table id="hot" class="product">
+			<tr>
+				<td><p>Pumpkin Cakes</p></td>
+			</tr>
+			<tr>
+				<td><p>Chinese Mini Bread (Fried &amp; Steamed)</p></td>
+			</tr>
+			<tr>
+				<td><p>Steamed Xiao Long Bao with a Juicy Meat Filling</p></td>
+			</tr>
+			<tr>
+				<td><p>Crispy Vegetarian Spring Rolls</p></td>
+			</tr>
+			<tr>
+				<td><p>Pan-fried Pork Dumplings</p></td>
+			</tr>
+		</table>
+		<h4>Cold<input type="button" class="btn" id="btnCold" value="-" onclick="foldCold();"></h4>
+		<table id="cold" class="product">
+			<tr>
+				<td><p>Seasonal Fruit Platter</p></td>
+			</tr>
+			<tr>
+				<td><p>Homemade Ice Cream and Sorbet</p></td>
+			</tr>
+			<tr>
+				<td><p>Sweet Tofu Pudding</p></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<footer>
+	<small>Nanyang Technological University, #01-01 Nanyang Center, 50 Nanyang Walk, Singapore 639929<br>
+		Tel: 8888 6666 | Email: <a href="mailto:xiongmao@xiongmao.com">xiongmao@xiongmao.com</a><br>
+		<i>Copyright &copy; 2018 Xiong Mao, Inc.<br></i></small>	
+</footer>
+<script src="js/menu.js">
+	//Initially fold all sections
+	var meat_x = document.getElementById("meat");
+	var meat_y = document.getElementById("btnMeat");
+	var vege_x = document.getElementById("vege");
+	var vege_y = document.getElementById("btnVege");
+	var alcohol_x = document.getElementById("alcohol");
+	var alcohol_y = document.getElementById("btnAlcohol");
+	var tea_x = document.getElementById("tea");
+	var tea_y = document.getElementById("btnTea");
+	var hot_x = document.getElementById("hot");
+	var hot_y = document.getElementById("btnHot");
+	var cold_x = document.getElementById("cold");
+	var cold_y = document.getElementById("btnCold");
+	
+	meat_x.style.display = "none";
+	meat_y.value = "+";
+	vege_x.style.display = "none";
+	vege_y.value = "+";
+	alcohol_x.style.display = "none";
+	alcohol_y.value = "+";
+	tea_x.style.display = "none";
+	tea_y.value = "+";
+	hot_x.style.display = "none";
+	hot_y.value = "+";
+	cold_x.style.display = "none";
+	cold_y.value = "+";</script>
+</body>
+</html>

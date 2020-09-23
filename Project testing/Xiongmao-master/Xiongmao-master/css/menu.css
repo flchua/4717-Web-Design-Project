@@ -1,0 +1,82 @@
+#header {
+	text-align: center;
+	vertical-align: middle;
+}
+#wrapper {
+	text-align: center;
+	display: inline-block;
+	height: auto;
+}
+#menu_nav {
+	text-align: center;
+	vertical-align: top;
+	width: 300px;
+	height: auto;
+	padding-right: 50px;
+	margin-top: 20px;
+	font-size: 19px;
+	font-weight: bolder;
+	display: inline-block;
+}
+#menu_nav ul {
+	padding: 0px;
+	list-style-type: none;
+}
+#menu_nav li {
+	padding: 10px 10px;
+	margin: 0px 20px 10px 20px;
+	background-color: black;
+	border: 1px solid #FF476F;
+}
+#menu_nav a{
+	text-decoration: none;
+	color: #FF476F;
+}
+#menu {
+	width: 900px;
+	height: 500px;
+	overflow: auto;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 20px;
+	padding: 0px 20px 20px 20px;
+	display: inline-block;
+	border: 1px dashed #FF476F;
+}
+.product td {
+	text-align: left;
+	vertical-align: left;
+	padding: auto;	
+}
+.btn {
+	border: none;
+	background: none;
+	float: right;
+	text-align: center; 
+	vertical-align: center;
+	color: #FF476F;
+	font-size: 80%;
+}
+.btn:focus {
+    outline: 0;
+}
+h2 {
+	text-align: left;
+}
+h3 {
+	text-align: left;
+	padding: 5px;
+	color: black;
+	background-color: #FF476F;
+}
+h4 {
+	padding:5px;
+	color: #FF476F;
+	border: 1px solid #FF476F;
+	text-align: left;
+}
+table {
+	width: 95%; 
+	margin: auto;
+	line-height: 0%;
+} 

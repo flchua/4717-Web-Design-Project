@@ -1,0 +1,82 @@
+#header {
+	text-align: center;
+	vertical-align: middle;
+}
+#delivery {
+	text-align: center;
+	display: inline-block;
+	height: auto;
+}
+#menu {
+	width: 800px;
+	text-align: center;
+	display: inline-block;
+}
+#cart {
+	width: 500px;
+	vertical-align: top;
+	display: inline-block;
+}
+#summary {
+	height: 500px;
+	text-align: center;
+	vertical-align: top;
+}
+#total {
+	height: 50px;
+	vertical-align: bottom;
+}
+#menu h3 {
+	text-align: left;
+}
+#cart td, th {
+	padding-bottom: 10px;
+}  
+#amount {
+    background-color: transparent;
+    border: 0px solid;
+    width: 15%;
+	color: white;
+	font-weight: bold;
+	font-size: 100%;
+	text-align: center;
+	vertical-align: bottom;
+}
+.product td {
+	text-align: left;
+	vertical-align: center;
+	padding: 0px 5px;	
+}
+.product input {
+	width: 30px;
+} 
+.btn {
+	border: none;
+	background: none;
+	float: right;
+	text-align: center; 
+	vertical-align: center;
+	font-size: 80%;
+}
+.btn:focus {
+    outline: 0;
+}
+body {
+	text-align: center;
+}
+footer {
+	column-span: all;
+	width: 100%
+}
+h3 {
+	padding:5px;
+	color: black;
+	background-color: #FF476F;
+}
+h4 {
+	color: #FF476F;
+}
+table {
+	width: 95%; 
+	margin: auto;
+}    

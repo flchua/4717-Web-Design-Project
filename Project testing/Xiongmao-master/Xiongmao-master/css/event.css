@@ -1,0 +1,64 @@
+#header {
+	text-align: center;
+	vertical-align: middle;
+}
+#booking {
+	text-align: center;
+}
+#event {
+	height: 600px;
+	width: 850px;
+	text-align: center;
+	vertical-align: top;
+	margin-right: 10px;
+	display: inline-block;
+}
+#cart {
+	height: 600px;
+	width: 500px;
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+}
+#summary {
+	height: 450px;
+	text-align: center;
+	vertical-align: top;
+}
+#total {
+	height: 50px;
+	vertical-align: bottom;
+}
+#info td {
+	height: 200px;
+	text-align: left;
+	vertical-align: center;
+	padding: 0px 10px;
+}
+#info input {
+	width: 30px;
+} 
+#cart td, th {
+	padding-bottom: 10px;
+} 
+#amount {
+    background-color: transparent;
+    border: 0px solid;
+    width: 15%;
+	color: white;
+	font-weight: bold;
+	font-size: 100%;
+	text-align: center;
+}
+h3 {
+	padding:5px;
+	color: black;
+	background-color: #FF476F;
+}
+h4 {
+	color: #FF476F;
+}
+table {
+	width: 95%; 
+	margin: auto;
+}    
