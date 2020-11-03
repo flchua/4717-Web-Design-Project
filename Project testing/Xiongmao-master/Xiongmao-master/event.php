@@ -12,7 +12,7 @@ if (!isset($_SESSION['user_id'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Xiong Mao - Event</title>
+<title>Sugoi - Event</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/xiongmao.css">
 <link rel="stylesheet" href="css/event.css">
@@ -24,7 +24,7 @@ if (!isset($_SESSION['user_id'])){
 </div>
 <div id="title-right">
 	<header>
-		<h1>Xiong Mao</h1>
+		<h1>Sugoi</h1>
 	</header>
 	<nav>
 		<a href="home.html">Home</a>
@@ -109,7 +109,7 @@ if (!isset($_SESSION['user_id'])){
 <footer>
 	<small>Nanyang Technological University, #01-01 Nanyang Center, 50 Nanyang Walk, Singapore 639929<br>
 		Tel: 8888 6666 | Email: <a href="mailto:xiongmao@xiongmao.com">xiongmao@xiongmao.com</a><br>
-		<i>Copyright &copy; 2018 Xiong Mao, Inc.<br></i></small>	
+		<i>Copyright &copy; 2020 Sugoi, Inc.<br></i></small>	
 </footer>
 </body>
 </html>

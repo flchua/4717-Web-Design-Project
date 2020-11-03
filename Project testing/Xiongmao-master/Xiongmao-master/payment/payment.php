@@ -190,7 +190,7 @@ else {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Xiong Mao - Payment</title>
+<title>Sugoi - Payment</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../css/xiongmao.css">
 <style>
@@ -292,7 +292,7 @@ input {
 	<a href="../home.html"><img src="../assets/logo.png" id="logo" width="204" height="103"></a></div>
 <div id="title-right">
 	<header>
-		<h1>Xiong Mao</h1>
+		<h1>Sugoi</h1>
 	</header>
 	<nav>
 		<a href="../home.html">Home</a>
@@ -349,7 +349,7 @@ input {
 <footer>
 	<small>Nanyang Technological University, #01-01 Nanyang Center, 50 Nanyang Walk, Singapore 639929<br>
 		Tel: 8888 6666 | Email: <a href="mailto:xiongmao@xiongmao.com">xiongmao@xiongmao.com</a><br>
-		<i>Copyright &copy; 2018 Xiong Mao, Inc.<br></i></small>
+		<i>Copyright &copy; 2020 Sugoi, Inc.<br></i></small>
 </footer>
 </body>
 </html>

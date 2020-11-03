@@ -1,0 +1,48 @@
+#header {
+	text-align: center;
+	vertical-align: middle;
+}
+#reserve {
+	text-align: center;
+}
+#notice {
+	padding-left: 30px;
+	width: 500px;
+	text-align: left;
+	display: inline-block;
+}
+#form {
+	margin-left:0px;   
+	width: 800px;
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+}
+#left {
+	width:390px;
+	display: inline-block;
+}
+#right {
+	width:390px;
+	vertical-align: top;
+	display: inline-block;
+}
+h2 {
+	color:#FF476F;
+	text-align: center;
+}
+form {
+	line-height: 150%;
+}
+label {
+	float: left;
+	text-align: right; 
+	padding-right: 10px;
+	width: 45%;
+	display: block;
+}  
+input, select, textarea {
+	margin-left: 20px;
+	text-align: left;
+	display: block;
+}	  
