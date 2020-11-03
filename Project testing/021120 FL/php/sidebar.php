@@ -7,7 +7,7 @@
 				// $tag = array('popular'   => 'Popular',
 				//              'new'       => 'New',
 				//              'promotion' => 'Promotion');
-                $tag = array('promotion' => 'Promotion');
+                $tag = array('sashimi' => 'Sashimi');
 				foreach($tag as $tag => $tag_string) {
 					echo '
 						<label for="tag--' . $tag . '" class="label label--checkbox">
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 			<?php
-                $categories = array('SHRT'     => 'Shirts and Blouses',
+                $categories = array('value in database under category'     => 'value on the filter page',
 				              'TSHT'   => 'T-Shirts',
 				              'DRSS'     => 'Dresses',
 				              'PNTS'     => 'Pants',
