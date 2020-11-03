@@ -1,11 +1,27 @@
+<!DOCTYPE html>
 <html lang="en">
+<?php include './php/head.php'; ?>
+<body class="debug o f d">
+    <?php
+        //Navigation and main category
+        session_start();
 
-<head>
-    <title>Sugoi - Reservation</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/reservation.css">
+        //Connect to database
+        $conn = new mysqli("localhost", "f35ee", "f35ee", "f35ee");
 
-    <script>
+        include './php/nav.php';
+
+        if ($conn->connect_error) {
+            //Fallback if unable to connect to database
+            include_once ('./php/error.php');
+            exit();
+        }
+
+        $conn->close();
+
+        echo '
+        <body>
+<script>
         function checkInput() { //Form validation
             //Check name
             var name = document.getElementById("rsvName");
@@ -47,22 +63,9 @@
             }
         }
     </script>
-</head>
-
-
-<body>
-    <!-- <div id="title-left">
-        <a href="home.html"><img src="assets/logo.png" id="logo" width="204" height="103"></a>
-    </div> -->
-    <div id="title-right">
-        <header>
-            <h1>Sugoi</h1>
-        </header>
-    </div>
+    <link rel="stylesheet" href="css/reservation.css">
     <div id="reserve">
-        <!-- <div id="header">
-            <img src="assets/headerReservation.png" width="1400" height="300">
-        </div> -->
+        <br><br><br>
         <div id="notice">
             <h2>Reservation Notice</h2>
             <p>Please read the following terms and conditions berfore making a reservation.</p>
@@ -115,11 +118,11 @@
             </form>
         </div>
     </div>
-    <!-- <footer>
-        <small>Nanyang Technological University, #01-01 Nanyang Center, 50 Nanyang Walk, Singapore 639929<br>
-            Tel: 8888 6666 | Email: <a href="mailto:xiongmao@xiongmao.com">xiongmao@xiongmao.com</a><br>
-            <i>Copyright &copy; 2020 Sugoi, Inc.<br></i></small>
-    </footer> -->
+
 </body>
 
-</html>
+        ';
+        include './php/footer.php';
+        echo '<script type="text/javascript" src="./js/global.js"></script>';
+
+    ?>

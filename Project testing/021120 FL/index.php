@@ -102,7 +102,7 @@
         //     exit();
         // }
 
-        // $conn->close();
+        $conn->close();
 
         include './php/footer.php';
         echo '<script type="text/javascript" src="./js/global.js"></script>';

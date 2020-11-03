@@ -181,7 +181,7 @@
                             <div class="row nav__submenu">
                                 <a href="./index.php" class="button submenu__button">Home</a>
                                 <a href="./shop.php" class="button submenu__button">Menu</a>
-                                <a href="./reservation.html" class="button submenu__button">Reservations</a>
+                                <a href="./reservation.php" class="button submenu__button">Reservations</a>
                                 <a href="./checkout.php" class="button submenu__button">Delivery</a>
                                 ';
     if (isset($_SESSION["username"])) {

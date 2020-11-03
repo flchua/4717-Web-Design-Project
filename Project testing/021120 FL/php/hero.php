@@ -62,7 +62,7 @@
 		<p>Check out our <strong>menu!</strong></p>
 	</div>	
 	<div class="column-img">
-		<a href="./reservation.html"><img src="./images/service2.png" width="300" height="200"></img></a>
+		<a href="./reservation.php"><img src="./images/service2.png" width="300" height="200"></img></a>
 	</div>
 	<div class="column-txt">		
 		<p>Want to pre-arrange dining? Come and make a <strong>reservation</strong> with us!</p>

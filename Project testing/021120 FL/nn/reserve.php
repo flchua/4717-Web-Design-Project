@@ -5,7 +5,7 @@ if (empty($_POST['rsvName']) || empty ($_POST['rsvPhone'])
 || empty ($_POST['rsvEmail']) || empty ($_POST['rsvDate'])) {
 		echo '<script language="javascript">';
 		echo "alert('Invalid submission with empty form.');";
-		echo "window.location.href = 'reservation.html';";
+		echo "window.location.href = 'reservation.php';";
 		echo '</script>';
 		exit;
 }

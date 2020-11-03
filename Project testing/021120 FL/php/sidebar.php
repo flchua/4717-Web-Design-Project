@@ -2,23 +2,23 @@
 		<div class="u-m-medium--bottom">
 			<h2 class="header">Search menu for</h2>
 		</div>
-		<div id="option--tag" class="option-group">
+		<!-- <div id="option--tag" class="option-group">
 			<?php
 				// $tag = array('popular'   => 'Popular',
 				//              'new'       => 'New',
 				//              'promotion' => 'Promotion');
-                $tag = array('sashimi' => 'Sashimi');
-				foreach($tag as $tag => $tag_string) {
-					echo '
-						<label for="tag--' . $tag . '" class="label label--checkbox">
-							<input type="checkbox" name="tag[]" value="' . $tag_string . '" class="input--checkbox" id="tag--' . $tag . '"' .
-                            (in_array($tag_string, $_GET["tag"]) ? ' checked' : '') .'>
-							' . $tag_string . '
-						</label>
-					';
-				}
+                // $tag = array('promotion' => 'Promotion');
+				// foreach($tag as $tag => $tag_string) {
+				// 	echo '
+				// 		<label for="tag--' . $tag . '" class="label label--checkbox">
+				// 			<input type="checkbox" name="tag[]" value="' . $tag_string . '" class="input--checkbox" id="tag--' . $tag . '"' .
+                //             (in_array($tag_string, $_GET["tag"]) ? ' checked' : '') .'>
+				// 			' . $tag_string . '
+				// 		</label>
+				// 	';
+				// }
 			?>
-		</div>
+		</div> -->
 		<!-- <div id="option--gender" class="option-group">
 			<div class="option__header">
 				<h4>Gender</h4>
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 			<?php
-                $categories = array('value in database under category'     => 'value on the filter page',
+                $categories = array('SHRT'     => 'Shirts and Blouses',
 				              'TSHT'   => 'T-Shirts',
 				              'DRSS'     => 'Dresses',
 				              'PNTS'     => 'Pants',

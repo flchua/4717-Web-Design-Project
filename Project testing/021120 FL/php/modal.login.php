@@ -2,7 +2,7 @@
 		<div id="modal__close" class="modal__close">
 			<i class="material-icons">close</i>
 		</div>
-		<h2 class="header u-m-large--bottom">Welcome back!</h2>
+		<h2 class="header u-m-large--bottom">Welcome!</h2>
 		<form>
 			<div class="u-flex">
 				<div class="u-m-medium--bottom">
