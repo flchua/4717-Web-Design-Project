@@ -2,7 +2,44 @@
 		<div class="u-m-medium--bottom">
 			<h2 class="header">Search menu for</h2>
 		</div>
-
+		<div id="option--tag" class="option-group">
+			<?php
+//				$tag = array('popular'   => 'Popular',
+//				             'new'       => 'New',
+//				             'promotion' => 'Promotion');
+                $tag = array('promotion' => 'Promotion');
+				foreach($tag as $tag => $tag_string) {
+					echo '
+						<label for="tag--' . $tag . '" class="label label--checkbox">
+							<input type="checkbox" name="tag[]" value="' . $tag_string . '" class="input--checkbox" id="tag--' . $tag . '"' .
+                            (in_array($tag_string, $_GET["tag"]) ? ' checked' : '') .'>
+							' . $tag_string . '
+						</label>
+					';
+				}
+			?>
+		</div>
+		<div id="option--gender" class="option-group">
+			<div class="option__header">
+				<h4>Gender</h4>
+				<div class="header__button">
+					Any Gender
+				</div>
+			</div>
+			<?php
+				$gender = array('men'   => 'Men',
+				                'women' => 'Women');
+				foreach($gender as $gender => $gender_string) {
+					echo '
+						<label for="gender--' . $gender . '" class="label label--checkbox">
+							<input type="checkbox" name="gender[]" value="' . $gender_string[0] . '" class="input--checkbox" id="gender--' . $gender . '" ' .
+                        (in_array($gender_string[0], $_GET["gender"]) ? ' checked' : '') . ' onchange="toggleGender(this)">
+							' . $gender_string . '
+						</label>
+					';
+				}
+			?>
+		</div>
 		<div id="option--type" class="option-group">
 			<div class="option__header">
 				<h4>Type</h4>
@@ -11,25 +48,25 @@
 				</div>
 			</div>
 			<?php
-                $categories = array('SHRT'     => 'Shirts',
+                $categories = array('SHRT'     => 'Shirts and Blouses',
 				              'TSHT'   => 'T-Shirts',
 				              'DRSS'     => 'Dresses',
 				              'PNTS'     => 'Pants',
 				              'SHTS'    => 'Shorts',
 				              'SKTS'    => 'Skirts',
-							  'OTWR' => 'Outerwear',
-							  'donb' => 'Donburi'
-							);
+				              'OTWR' => 'Outerwear');
 				/**
 				 * adjust key value pair and checkbox visibility
 				 * depending on option--gender
 				 */
+                $men_selected = in_array('M', $_GET["gender"]);
+                $women_selected = in_array('W', $_GET["gender"]);
 				foreach($categories as $category => $category_string) {
 					echo '  <label for="category--' . $category . '" class="label label--checkbox">
                                 <div id="option--'. $category .'"' . '>
                                     <input type="checkbox" name="category[]" value="' . $category . '" class="input--checkbox" id="category--' . $category . '"' .
-                                    (($category == 'DRSS' || $category == 'SKTS') ? ( (in_array($category, $_GET["category"]) ? ' checked' : '') ) : (in_array($category, $_GET["category"]) ? ' checked' : '')) .'>
-                                    <span id= "inner' . $category . '">' . ($category == 'SHRT' ? 'Shirts' : $category_string) . '</span>
+                                    (($category == 'DRSS' || $category == 'SKTS') ? (($women_selected || !$men_selected) ? (in_array($category, $_GET["category"]) ? ' checked' : '') : '') : (in_array($category, $_GET["category"]) ? ' checked' : '')) .'>
+                                    <span id= "inner' . $category . '">' . ($category == 'SHRT' ? (($women_selected || !$men_selected) ? $category_string : 'Shirts') : $category_string) . '</span>
                                 </div>
 						    </label>';
 				}
